@@ -26,7 +26,7 @@ namespace kurs_sommerstudenter_webapi.Controllers
         [HttpGet]
         public string Get()
         {
-            return "Hello"; 
+            return "Hello world"; 
         }
     }
 }
