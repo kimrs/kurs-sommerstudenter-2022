@@ -1,1 +1,5 @@
 GET localhost:5001/weatherforecast
+
+###
+
+GET https://restapi-kurs-sommerstudenter-2022.azurewebsites.net
