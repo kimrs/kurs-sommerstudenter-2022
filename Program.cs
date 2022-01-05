@@ -20,6 +20,7 @@ namespace kurs_sommerstudenter_webapi
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+// test comment
                     webBuilder.UseStartup<Startup>();
                 });
     }
