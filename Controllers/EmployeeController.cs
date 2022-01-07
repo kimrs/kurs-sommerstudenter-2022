@@ -37,5 +37,15 @@ namespace kurs_sommerstudenter_2022.Controllers
         {
             return _employees;
         }
+        [HttpPost]
+        public ActionResult CreateEmployee(Employee employee)
+        {
+            if (!_employees.Any(x => x.Name == employee.Name)) {
+                _employees.Add(employee);
+                return Created();
+            }
+            return Ok();
+        }
     }
+
 }
