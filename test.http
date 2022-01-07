@@ -1,5 +1,40 @@
-GET localhost:5001/employee
+GET https://localhost:5001/Employees
 
 ###
+GET https://localhost:5001/Employees/Brian%20Kernighan
 
-GET https://restapi-kurs-sommerstudenter-2022.azurewebsites.net
+###
+POST https://localhost:5001/Employees
+Content-Type: application/json
+
+{
+    "name": "Troy Hunt",
+    "occupation": "Tester"
+}
+
+###
+POST https://localhost:5001/Employees
+Content-Type: application/x-www-form-urlencoded
+
+name=Troy%20Hunt&occupation=Tester
+
+###
+PUT https://localhost:5001/Employees
+Content-Type: application/json
+
+{
+    "name": "Brian Kernighan",
+    "occupation": "Tester"
+}
+
+###
+PUT https://localhost:5001/Employees
+Content-Type: application/json
+
+{
+    "name": "Troy Hunt",
+    "occupation": "Tester"
+}
+
+###
+DELETE https://localhost:5001/Employees/Brian%20Kernighan
