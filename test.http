@@ -1,4 +1,4 @@
-GET localhost:5001/weatherforecast
+GET localhost:5001/employee
 
 ###
 
